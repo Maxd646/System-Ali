@@ -56,16 +56,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Home </a>
+                <a class="nav-link" href="{% url 'about' %}">Home </a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="{% url 'menu' %}">Menu <span class="sr-only">(current)</span> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'index' %}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'book' %}">Book Table</a>
+                <a class="nav-link" href="{% url 'book' %}">order</a>
               </li>
             </ul>
             <div class="user_option">
@@ -131,7 +131,7 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
+              <a href="{% url 'book' %}" class="order_online">
                 Order Online
               </a>
             </div>
@@ -778,15 +778,18 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    Delicious Pasta
+                    {% for Food in Foods %}
+                    {{Food.name}}
                   </h5>
                   <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
+                   {{Food.description}}
                   </p>
                   <div class="options">
                     <h6>
-                      $10
+                      ${{Food.price}}
+                      {{Food.catagory}}  
                     </h6>
+                    {% endfor %}
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>

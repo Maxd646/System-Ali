@@ -66,7 +66,7 @@
                 <a class="nav-link" href="{% url 'about' %}">About</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="{% url 'book' %}">Book Table <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="{% url 'book' %}">Order Now <span class="sr-only">(current)</span> </a>
               </li>
             </ul>
             <div class="user_option">
@@ -132,7 +132,7 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="" class="order_online">
+              <a href="{% url 'book' %}" class="order_online">
                 Order Online
               </a>
             </div>
@@ -148,22 +148,18 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Book A Table
+        Online Order Form
         </h2>
       </div>
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
             <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
+                  <form method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  {{ form.as_p }} 
+                  <button type="submit">Submit</button>
+                </form>
               <div>
                 <select class="form-control nice-select wide">
                   <option value="" disabled selected>
@@ -188,7 +184,7 @@
               </div>
               <div class="btn_box">
                 <button>
-                  Book Now
+                  Submit Now
                 </button>
               </div>
             </form>
