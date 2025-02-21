@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import CustomerForm
-from .models import Customer,Food
+from .models import Food
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
@@ -9,6 +8,51 @@ from allauth.socialaccount.models import SocialLogin
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from allauth.socialaccount.helpers import complete_social_login
 from allauth.socialaccount.models import SocialAccount
+from django.http import HttpResponse
+from .services import send_sms
+from .models import FoodOrdera
+from .forms import FoodOrderaForm
+from django.conf import settings
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from twilio.twiml.messaging_response import MessagingResponse
+from twilio.rest import Client
+
+
+@csrf_exempt
+def incoming_sms(request):
+    """Handles SMS replies from customers"""
+    body = request.POST.get("Body", "").strip()
+    sender = request.POST.get("From", "")
+
+    response = MessagingResponse()
+    response.message(f"Thank you for your message: {body}")
+
+    return HttpResponse(str(response), content_type="application/xml")
+@login_required(login_url='about')
+def place_food_order(request):
+    if request.method == "POST":
+        form = FoodOrderaForm(request.POST)
+        if form.is_valid():
+            # Save order
+            food_order = form.save(commit=False)
+            food_order.customer =request.user
+            food_order.status = "pending"
+            food_order.save()
+
+            # Send SMS to Customer
+            send_sms(food_order.phone_number, f"Hello {request.user.username}, your order has been placed and is now pending. We will notify you once it's confirmed!")
+
+            # Send SMS to Admin
+            send_sms(settings.ADMIN_PHONE_NUMBER, f"New order placed by {request.user.first_name}. Order ID: {food_order.id}, Status: Pending")
+
+            messages.success(request, "Your food order has been placed!")
+            return redirect("book")  # Redirect to a success page
+
+    else:
+        form = FoodOrderaForm()
+
+    return render(request, "book.html", {"form": form})
 
 def user_login(request):
     if request.method == "POST":  
@@ -77,10 +121,11 @@ def user_logout(request):
 
 @login_required(login_url='about')
 def index(request):
-    
+    Foods= Food.objects.all()
     return render(request, 'index.html', {
         'Special_day': 'Christmas',
         'spcial_day': 'Eid al-Fitr',
+        'Foods': Foods,
     })
 
 def about(request):
@@ -88,27 +133,15 @@ def about(request):
 
 @login_required(login_url='about')
 def book(request):
-    if request.method == 'POST':
-        form = CustomerForm(request.POST, request.FILES)  
-        if form.is_valid():
-            form.save()  
-            return redirect('menu')  
-    else:
-        form = CustomerForm() 
-    
-    return render(request, 'book.html', { 'form':form })
+    return render(request, 'book.html')
+
 
 @login_required(login_url='about')
 def menu(request):
     Foods= Food.objects.all()
     return render(request, 'menu.html', {'Foods': Foods})
+   
 
-def customer_create(request):
-    if request.method == 'POST':
-        form = CustomerForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-            return redirect('menu')  
-    else:
-        form = CustomerForm()
-    return render(request, 'E_commerce/customer_form.html', {'form': form})
+def post(request, pk):
+    return render(request,'post.html', {'pk':pk} )
+

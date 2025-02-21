@@ -34,13 +34,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
+    "admin_interface",
+    "colorfield",
+    'django.contrib.admin',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'E_commerce.apps.ECommerceConfig',
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -51,7 +54,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'accounts'
 ]
-
+X_FRAME_OPTIONS = "SAMEORIGIN"
+SILENCED_SYSTEM_CHECKS = ["security.W019"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -84,10 +88,21 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'mybackend.wsgi.application'
+ASGI_APPLICATION = 'E_commerce.asgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],  # Redis server setup
+        },
+    },
+}
+
 
 DATABASES = {
     'default': {
@@ -100,6 +115,10 @@ DATABASES = {
     }
 }
 
+TWILIO_ACCOUNT_SID = 'ACfb8c43e66b65bddbb4c9044845e8a7e7'
+TWILIO_AUTH_TOKEN = '9bb8a65dc87ac1c664f763cb4c5a24ba'
+TWILIO_PHONE_NUMBER = '+15417948701',
+ADMIN_PHONE_NUMBER = "+251914243851",
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators

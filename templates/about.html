@@ -6,7 +6,7 @@
 
 <head>
   <!-- Basic -->
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -130,10 +130,10 @@
               </a>
                 <a>
                   {% if user.is_authenticated %}
-                    <p>Welcome, {{ user.username }}!</p>
+                    <p style="color: brown;">Welcome, {{ user.username }}!</p>
                     <a href="{% url 'logout' %}">Logout</a>
                   {% else %}
-                  <a href="{% provider_login_url 'google' %}">Login with Google</a>
+                  <a href="{% provider_login_url 'google' %}">Login</a>
                   <a href="#" onclick="openModal('register')">Register</a>
                   {% endif %}
                 
@@ -193,17 +193,6 @@
                       document.getElementById("register_modal").style.display = "none";
                     }
                   </script>
-                
-                  <!-- Django Messages for Errors -->
-                  <div>
-                    {% if messages %}
-                      <ul>
-                        {% for message in messages %}
-                          <li style="color: red;">{{ message }}</li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </div>
                 </div>
               </a>
               </a>
@@ -219,7 +208,15 @@
 
   <section class="about_section layout_padding">
     <div class="container  ">
-
+      <div>
+             {% if messages %}
+                <ul>
+                  {% for message in messages %}
+                    <li style="color: red;">{{ message }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+        </div>
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
