@@ -13,7 +13,11 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 
+import dj_database_url
 
+DATABASES = {
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+}
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +32,7 @@ SECRET_KEY = 'django-insecure-hlwht!-m_2^u^_hx-87qd3_^fmwr-)ncn*$o$n$y+y$j_%3!ke
 DEBUG = True
 CORS_ALLOW_ALL_ORIGINS = True  
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['DaniBoy free delivery-url.onrender.com']
 
 
 # Application definition
