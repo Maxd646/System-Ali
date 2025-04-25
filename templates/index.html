@@ -2,7 +2,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +11,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
 
-  <title> Alamnew</title>
+  <title> </title>
 
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
@@ -42,7 +41,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{% url 'index' %}">
             <span>
-              Alamnew
+              Ali Fennix
             </span>
           </a>
 
@@ -53,15 +52,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
               <li class="nav-item active">
-                <a class="nav-link" href="{% url 'about' %}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{% url 'index' %}">About <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'menu' %}">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">About</a>
+                <a class="nav-link " href="{% url 'about' %}">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="{% url 'book' %}">Order</a>
               </li>
             </ul>
@@ -93,34 +92,6 @@
                   </g>
                   <g>
                   </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
                 </svg>
               </a>
               <form class="form-inline">
@@ -147,15 +118,12 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
-                      Alamnew Food Delivery
+                    <h1>Ali Fennix Food Delivery</h1>
                     <p>
                       Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                     </p>
                     <div class="btn-box">
-                      <a href="{% url 'book' %}" class="btn1">
-                        Order Now
-                      </a>
+                      <a href="{% url 'book' %}" class="btn1">Order Now</a>
                     </div>
                   </div>
                 </div>
@@ -167,15 +135,10 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
+                    <h1>Fast Food Restaurant</h1>
+                    <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
                     <div class="btn-box">
-                      <a href="{% url 'book' %}" class="btn1">
-                        Order Now
+                      <a href="{% url 'book' %}" class="btn1">Order Now
                       </a>
                     </div>
                   </div>
@@ -188,15 +151,10 @@
               <div class="row">
                 <div class="col-md-7 col-lg-6 ">
                   <div class="detail-box">
-                    <h1>
-                      Fast Food Restaurant
-                    </h1>
-                    <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
-                    </p>
+                    <h1>Fast Food Restaurant</h1>
+                    <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
                     <div class="btn-box">
-                      <a href="{% url 'book' %}" class="btn1">
-                        Order Now
+                      <a href="{% url 'book' %}" class="btn1">Order Now
                       </a>
                     </div>
                   </div>
@@ -230,12 +188,8 @@
                 <img src="{% static 'images/o1.jpg' %}" alt="">
               </div>
               <div class="detail-box">
-                <h5>
-                  Christain Holiday: {{Special_day}}
-                </h5>
-                <h6>
-                  <span>20%</span> Off
-                </h6>
+                <h5>Christain Holiday: {{Special_day}}</h5>
+                <h6><span>20%</span> Off </h6>
                 <a href="{% url 'book' %}">
                   Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
@@ -257,36 +211,6 @@
                         <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                      c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                       </g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
                     </g>
                   </svg>
                 </a>
@@ -299,12 +223,8 @@
                 <img src="{% static 'images/o2.jpg' %}" alt="">
               </div>
               <div class="detail-box">
-                <h5>
-                  Muslim Holiday:{{spcial_day}}
-                </h5>
-                <h6>
-                  <span>15%</span> Off
-                </h6>
+                <h5>Muslim Holiday:{{spcial_day}}</h5>
+                <h6><span>15%</span> Off</h6>
                 <a href="{% url 'book' %}">
                   Order Now <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                     <g>
@@ -326,36 +246,6 @@
                         <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                      c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                       </g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
                     </g>
                   </svg>
                 </a>
@@ -374,11 +264,8 @@
   <section class="food_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
-          Our Menu
-        </h2>
+        <h2>Our Menu</h2>
       </div>
-
       <ul class="filters_menu">
         <li class="active" data-filter="*">All</li>
         <li data-filter=".burger">Burger</li>
@@ -396,19 +283,35 @@
                   <img src="{{ Food.image.url }}" alt="Delicious Pizza">
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    {{Food.name}}
-                  </h5>
-                  <p>
-                   {{Food.description}}
-                  </p>
+                  <h5>{{Food.name}}</h5>
+                  <p>{{Food.description}}</p>
                   <div class="options">
-                    <h6>
-                      price {{Food.price}} birr
-                    </h6>
-                    <h6>
-                      available: {{Food.available}}  
-                    </h6>
+                    <h6>price {{Food.price}} birr </h6>
+                    <h6>available: {{Food.available}} </h6>
+                    <style>
+                      .feedback {
+                        margin-bottom: 20px;
+                      }
+                      .buttons {
+                        margin-top: 5px;
+                      }
+                      .count {
+                        font-weight: bold;
+                      }
+                    </style>
+                  </head>
+                  <body>
+                  <div class="feedback">
+                    <p>{{ item.name }}: Do you like this?</p>
+                    <div class="buttons">
+                      <form method="post">
+                        {% csrf_token %}
+                        <button type="submit" name="like">👍</button>
+                        <button type="submit" name="dislike">👎</button>
+                      </form>
+                    </div>
+                    <p class="count">Likes: {{ item.likes }}, Dislikes: {{ item.dislikes }}</p>
+                  </div>
                     <a href="">
                       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                         <g>
@@ -433,34 +336,6 @@
                         </g>
                         <g>
                         </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
                       </svg>
                     </a>
                   </div>
@@ -472,8 +347,7 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
-          View More
+        <a href="">View More
         </a>
       </div>
     </div>
@@ -495,9 +369,7 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                We Are Alamnewian
-              </h2>
+              <h2>We Are Ali Fennixian</h2>
             </div>
             <p>
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
@@ -505,65 +377,13 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text. All
             </p>
-            <a href="">
-              Read More
+            <a href="">Read More
             </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="book_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Book A Table
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div>
-                <select class="form-control nice-select wide">
-                  <option value="" disabled selected>
-                    How many persons?
-                  </option>
-                  <option value="">
-                    2
-                  </option>
-                  <option value="">
-                    3
-                  </option>
-                  <option value="">
-                    4
-                  </option>
-                  <option value="">
-                    5
-                  </option>
-                </select>
-              </div>
-              <div>
-                <input type="date" class="form-control">
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
         <div class="col-md-6">
           <div class="map_container ">
             <div id="googleMap"></div>
@@ -572,29 +392,20 @@
       </div>
     </div>
   </section>
-  
 
   <section class="client_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center psudo_white_primary mb_45">
-        <h2>
-          What Says Our Customers
-        </h2>
+        <h2>What Says Our Customers</h2>
       </div>
       <div class="carousel-wrap row ">
         <div class="owl-carousel client_owl-carousel">
           <div class="item">
             <div class="box">
               <div class="detail-box">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                </p>
-                <h6>
-                  Moana Michell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h6>Moana Michell</h6>
+                <p>magna aliqua</p>
               </div>
               <div class="img-box">
                 <img src="{% static 'images/client1.jpg' %}" alt="" class="box-img">
@@ -607,16 +418,61 @@
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                 </p>
-                <h6>
-                  Mike Hamell
-                </h6>
-                <p>
-                  magna aliqua
-                </p>
+                <h6>Mike Hamell</h6>
+                <p>magna aliqua</p>
               </div>
               <div class="img-box">
                 <img src="{% static 'images/client2.jpg' %}" alt="" class="box-img">
               </div>
+            </div>
+            <section class="book_section layout_padding">
+              <div class="container">
+                <div class="heading_container">
+                  <h2>Book A Table </h2>
+                </div>
+                <div class="order">
+                  <div class="col-md-6">
+                    <div class="order_container">
+                      <form action="">
+                        <div>
+                          <input type="text" class="form-control" placeholder="Your Name" />
+                        </div>
+                        <div>
+                          <input type="text" class="form-control" placeholder="Your Feedback" />
+                        </div>
+                        <div>
+                          <input type="text" class="form-control" placeholder="Phone Number" />
+                        </div>
+                        <div>
+                          <input type="email" class="form-control" placeholder="Your Email" />
+                        </div>
+                        <div>
+                          <select class="form-control nice-select wide">
+                            <option value="" disabled selected>
+                              How many persons?</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                          </select>
+                        </div>
+                        <div>
+                          <input type="date" class="form-control">
+                        </div>
+                        <div class="btn_box">
+                          <button>Book NoW</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="map_container ">
+                      <div id="googleMap"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
             </div>
           </div>
         </div>
@@ -630,39 +486,27 @@
       <div class="row">
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
-            <h4>
-              Contact Us
-            </h4>
+            <h4>Contact Us</h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span>Location</span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +251.923456786
-                </span>
+                <span>Call +251.923456786</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Alamnew2015freedelivery@gmail.com
-                </span>
+                <span>Alamnew2015freedelivery@gmail.com</span>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Alamnew
-            </a>
-            <p>
-              Necessary, making this the first thing is that learn Web develoment
-            </p>
+            <a href="" class="footer-logo">Fennix</a>
+            <p>Necessary, making this the first thing is that learn Web develoment</p>
             <div class="footer_social">
               <a href="">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -683,20 +527,14 @@
           </div>
         </div>
         <div class="col-md-4 footer-col">
-          <h4>
-            Opening Hours
-          </h4>
-          <p>
-            Everyday
-          </p>
-          <p>
-            10.00 Am -10.00 Pm
-          </p>
+          <h4>Opening Hours</h4>
+          <p>Everyday</p>
+         <p>10.00 Am -10.00 Pm</p>
         </div>
       </div>
       <div class="footer-info">
         <p>
-          &copy; <span id="displayYear"></span> Alamnew free delivery,  Rights Reserved.
+          &copy; <span id="displayYear"></span> Ali Fennix free delivery,  Rights Reserved.
          <a href="{% static 'https://html.design/' %}">Free Html Templates</a><br><br>
           &copy; <span id="displayYear"></span> Made By
           <a href="{% static 'https://themewagon.com/' %}" target="_blank">Amonalous Web developer</a>

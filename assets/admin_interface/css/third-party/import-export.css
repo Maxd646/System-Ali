@@ -1,7 +1,7 @@
 /* Fix left/right scrolling broken with django-import-export #165 */
 .admin-interface table.import-preview {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
 }

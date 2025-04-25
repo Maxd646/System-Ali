@@ -32,7 +32,7 @@ body {
 
 h1,
 h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .heading_container {
@@ -41,11 +41,11 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .heading_container h2 {
@@ -66,8 +66,8 @@ h2 {
 
 .heading_container.heading_center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -86,7 +86,7 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*header section*/
@@ -98,8 +98,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .bg-box {
@@ -114,7 +114,7 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .sub_page .hero_area {
@@ -133,9 +133,9 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: right top;
-     object-position: right top;
+  object-position: right top;
 }
 
 .header_section {
@@ -148,7 +148,7 @@ a:focus {
 }
 
 .navbar-brand {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .navbar-brand span {
@@ -175,7 +175,8 @@ a:focus {
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #ffbe33;
 }
 
@@ -197,8 +198,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option a {
@@ -218,11 +219,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option .cart_link svg {
@@ -276,7 +277,8 @@ a:focus {
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -295,17 +297,18 @@ a:focus {
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 0;
 }
 
@@ -313,22 +316,22 @@ a:focus {
 /* slider section */
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 45px 0 75px 0;
 }
 
 .slider_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section #customCarousel1 {
@@ -375,11 +378,11 @@ a:focus {
   position: unset;
   margin: 0;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section .carousel-indicators li {
@@ -406,8 +409,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 45px;
   border-radius: 5px;
   padding: 20px 15px;
@@ -430,18 +433,18 @@ a:focus {
 
 .offer_section .box .img-box img {
   width: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .offer_section .box .detail-box h5 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 24px;
   margin: 0;
 }
 
 .offer_section .box .detail-box h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   margin: 10px 0;
 }
 
@@ -474,7 +477,7 @@ a:focus {
 
 .offer_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .filters_menu {
@@ -483,10 +486,10 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style-type: none;
   margin: 45px 0 20px 0;
 }
@@ -519,11 +522,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 215px;
   border-radius: 0 0 0 45px;
   margin: -1px;
@@ -533,8 +536,8 @@ a:focus {
 .food_section .box .img-box img {
   max-width: 100%;
   max-height: 145px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .food_section .box .detail-box {
@@ -558,8 +561,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .food_section .box .options a {
@@ -571,11 +574,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .food_section .box .options a svg {
@@ -586,7 +589,7 @@ a:focus {
 
 .food_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .btn-box {
@@ -594,8 +597,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -621,8 +624,8 @@ a:focus {
 
 .about_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about_section .img-box {
@@ -631,8 +634,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about_section .img-box img {
@@ -682,7 +685,7 @@ a:focus {
   border-radius: 5px;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .book_section .form_container .form-control::-webkit-input-placeholder {
@@ -747,8 +750,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 15px;
 }
 
@@ -758,11 +761,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 115px;
   position: relative;
   margin-top: 30px;
@@ -783,7 +786,7 @@ a:focus {
   height: 20px;
   background-color: #ffbe33;
   -webkit-transform: rotate(45deg) translateX(-50%);
-          transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
 }
 
 .client_section .box .detail-box {
@@ -810,8 +813,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
   padding: 0 15px;
 }
@@ -876,8 +879,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contact_section .form_container button {
@@ -914,7 +917,7 @@ a:focus {
 .footer_section .footer-logo {
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 .footer_section p {
@@ -931,8 +934,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer_section .footer_contact .contact_link_box a {
@@ -961,8 +964,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -972,11 +975,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #222831;
   width: 30px;
   height: 30px;
@@ -1004,4 +1007,23 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+.order {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically (if needed) */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  margin: 0 auto; /* Center the row */
+}
+
+.order_container {
+  width: 100%; /* Make the form take full width */
+  max-width: 500px; /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional: Add border for box effect */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  background: #fff; /* Background color */
+}
+
 /*# sourceMappingURL=style.css.map */

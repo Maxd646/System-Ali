@@ -14,16 +14,19 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
 
-  <title> Alamnew Food Delivery </title>
+  <title>Ali Fennix delivery </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
-  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
+  <link rel="stylesheet" type="text/css"
+    href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' %}" />
   <!-- nice select  -->
-  <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css' %}" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css' %}"
+    integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+    crossorigin="anonymous" />
   <!-- font awesome style -->
   <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
 
@@ -44,29 +47,27 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="{% url 'index' %}">
-            <span>
-              Alamnew food delivery
-            </span>
+          <a class="navbar-brand" href="{% static 'index.html' %}">
+            <span>Ali Fennix Retorauant </span>
           </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'book' %}">order <span class="sr-only">(current)</span> </a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'index' %}">Home </a>
+                <a class="nav-link" href="{% url 'about' %}">Home </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'menu' %}">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{% url 'book' %}">Order Now <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="{% url 'index' %}">About</a>
               </li>
             </ul>
             <div class="user_option">
@@ -74,7 +75,9 @@
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029"
+                  style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
                   <g>
                     <g>
                       <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
@@ -95,36 +98,6 @@
                    c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                     </g>
                   </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
                 </svg>
               </a>
               <form class="form-inline">
@@ -132,179 +105,237 @@
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
-              <a href="{% url 'book' %}" class="order_online">
-                Order Online
-              </a>
+              <a href="{% url 'book' %}" class="order_online">Order Online</a>
             </div>
           </div>
         </nav>
       </div>
-    </header>
-    <!-- end header section -->
+    </header> 
   </div>
 
   <!-- book section -->
   <section class="book_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+       <div class="heading_container">
         {% if user.is_authenticated %}
-        <h2> What's Up?, {{user.username}}!</h2>
-        <h2>
-        You can Order Your favorite food
-        </h2>
+        <h2 style="color: aqua;"> What's Up?, {{user.username}}!</h2>
+        <h2 style="color: green;">You can Order Your favorite food</h2>
         {% else %}
         <p>Order Now</p>
         {% endif %}
-      </div>
-      <div class="row">
+        </div>
+       <div class="order">
         <div class="col-md-6">
-          <div class="form_container">
+          <div class="order_container">
             {% if messages %}
-              {% for message in messages %}
-                <p style="color: green;">{{ message }}</p>
-              {% endfor %}
+            {% for message in messages %}
+            <p style="color: green;">{{ message }}</p>
+            {% endfor %}
             {% endif %}
             <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Submit Order</button>
-            </form> 
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="order_online">Submit Order</button>
+            </form>
             <script>
               const orderSocket = new WebSocket("ws://127.0.0.1:8000/ws/order/");
-              orderSocket.onopen = function(e) {
-                  console.log("WebSocket connection opened.");
+              orderSocket.onopen = function () {
+                console.log("WebSocket connection opened.");
               };
-          
-              orderSocket.onerror = function(e) {
-                  console.error("WebSocket error:", e);
+              orderSocket.onerror = function (e) {
+                console.error("WebSocket error:", e);
               };
-          
-              orderSocket.onmessage = function(e) {
-                  console.log("WebSocket message received:", e.data);
-                  data = JSON.parse(e.data);
-                  document.getElementById('order-status').textContent = 'Status: ' + data.status;
+              orderSocket.onmessage = function (e) {
+                console.log("WebSocket message received:", e.data);
+                let data = JSON.parse(e.data);
+                document.getElementById('order-status').textContent = 'Status: ' + data.status;
               };
-          
-              orderSocket.onclose = function(e) {
-                  console.log("WebSocket closed:", e);
+              orderSocket.onclose = function () {
+                console.log("WebSocket closed.");
               };
-          </script>
-          
-          <h2>Order Status</h2>
-          <p id="order-status">Pending</p>          
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
+            </script>
+            <h2>Order Status</h2>
+            <p id="order-status">Pending</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <div class="footer_contact">
-            <h4>
-              Contact Us
-            </h4>
-            <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +251. 912345686
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  Alamnew2015fooddelivery@gmail.com
-                </span>
-              </a>
+    <section class="client_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center psudo_white_primary mb_45">
+          <h2 style="background-color: blanchedalmond; color:darkblue">
+            What Says Our Customers
+          </h2>
+        </div>
+        <div class="carousel-wrap row ">
+          <div class="owl-carousel client_owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <h6>Moana Michell</h6>
+                  <p>magna aliqua</p>
+                </div>
+                <div class="img-box">
+                  <img src="{% static 'images/client1.jpg' %}" alt="" class="box-img">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                  <h6>Mike Hamel </h6>
+                  <p>magna aliqua</p>
+                </div>
+                <div class="img-box">
+                  <img src="{% static 'images/client2.jpg' %}" alt="" class="box-img">
+                </div>
+              </div>
+              <section class="book_section layout_padding">
+                <div class="container">
+                  <div class="heading_container">
+                    <h2>Book A Table </h2>
+                  </div>
+                  <div class="order">
+                    <div class="col-md-6">
+                      <div class="order_container">
+                        <form action="">
+                          <div>
+                            <input type="text" class="form-control" placeholder="Your Name" />
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" placeholder="Your Feedback" />
+                          </div>
+                          <div>
+                            <input type="text" class="form-control" placeholder="Phone Number" />
+                          </div>
+                          <div>
+                            <input type="email" class="form-control" placeholder="Your Email" />
+                          </div>
+                          <div>
+                            <select class="form-control nice-select wide">
+                              <option value="" disabled selected>
+                                How many persons?</option>
+                              <option value="">2</option>
+                              <option value="">3</option>
+                              <option value="">4</option>
+                              <option value="">5</option>
+                            </select>
+                          </div>
+                          <div>
+                            <input type="date" class="form-control">
+                          </div>
+                          <div class="btn_box">
+                            <button>Book NoW</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="map_container ">
+                        <div id="googleMap"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 footer-col">
-          <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Alamnew
-            </a>
+      </div>
+    </section>
+
+     <!-- footer section -->
+    <footer class="footer_section"">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <div class="footer_contact">
+                <h4>Contact Us</h4>
+                <div class="contact_link_box">
+                  <a href="https://maps.app.goo.gl/NnkTQVRZUYzoUfBS7" target="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Location</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span> Call +251.923456786</span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>Alamnew2015freedelivery@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <div class="footer_detail">
+                <a href="" class="footer-logo">Fennix</a>
+                <p>Necessary, making this the first thing is that learn Web develoment</p>
+                <div class="footer_social">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h4>Opening Hours</h4>
+              <p> Everyday</p>
+              <p>10.00 Am -10.00 Pm</p>
+            </div>
+          </div>
+          <div class="footer-info">
             <p>
-              Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+              &copy; <span id="displayYear"></span>Ali Fennix free delivery, Rights Reserved.
+              <a href="{% static 'https://html.design/' %}">Free Html Templates</a><br><br>
+              &copy; <span id="displayYear"></span> Made By
+              <a href="{% static 'https://themewagon.com/' %}" target="_blank">Amonalous Web developer</a>
             </p>
-            <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
-              </a>
-            </div>
           </div>
         </div>
-        <div class="col-md-4 footer-col">
-          <h4>
-            Opening Hours
-          </h4>
-          <p>
-            Everyday
-          </p>
-          <p>
-            10.00 Am -10.00 Pm
-          </p>
-        </div>
-      </div>
-      <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="{% static 'https://html.design/' %}">Alamnew Online Food delivery</a><br><br>
-          &copy; <span id="displayYear"></span> Made By
-          <a href="{% static 'https://themewagon.com/' %}" target="_blank">ThemeWagon</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section -->
+      </footer>
+      <!-- footer section -->
 
-  <!-- jQery -->
-  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
-  <!-- popper js -->
-  <script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' %}" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="{% static 'js/bootstrap.js' %}"></script>
-  <!-- owl slider -->
-  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
-  </script>
-  <!-- isotope js -->
-  <script src="{% static 'https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js' %}"></script>
-  <!-- nice select -->
-  <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js' %}"></script>
-  <!-- custom js -->
-  <script src="{% static 'js/custom.js' %}"></script>
-  <!-- Google Map -->
-  <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap' %}">
-  </script>
-  <!-- End Google Map -->
-
+      <!-- jQery -->
+      <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+      <!-- popper js -->
+      <script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' %}"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+      <!-- bootstrap js -->
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+      <!-- owl slider -->
+      <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+      </script>
+      <!-- isotope js -->
+      <script src="{% static 'https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js' %}"></script>
+      <!-- nice select -->
+      <script
+        src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js' %}"></script>
+      <!-- custom js -->
+      <script src="{% static 'js/custom.js' %}"></script>
+      <!-- Google Map -->
+      <script
+        src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap' %}">
+        </script>
+      <!-- End Google Map -->
 </body>
 
 </html>

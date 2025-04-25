@@ -1,6 +1,8 @@
-@media (max-width: 1300px) {}
+@media (max-width: 1300px) {
+}
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+}
 
 @media (max-width: 992px) {
   .hero_area {
@@ -9,11 +11,11 @@
 
   .custom_nav-container .navbar-nav {
     padding-top: 15px;
-padding-left: 0;
+    padding-left: 0;
     align-items: center;
   }
 
-  .user_option{
+  .user_option {
     justify-content: center;
     margin-top: 15px;
   }
@@ -39,7 +41,6 @@ padding-left: 0;
 }
 
 @media (max-width: 767px) {
-
   .about_section .detail-box,
   .book_section .form_container {
     margin-bottom: 45px;
@@ -60,9 +61,11 @@ padding-left: 0;
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+}
 
 @media (max-width: 430px) {
   .offer_section .box {
@@ -88,8 +91,7 @@ padding-left: 0;
   }
 }
 
-
-@media (min-width:576px) and (max-width:991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .rent_solution_container .col-md-4.col-sm-6 {
     float: left;
     width: 50%;

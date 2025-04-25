@@ -14,9 +14,9 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="">
+  <link rel="shortcut icon" href="{% static 'images/f5.png' %}" type="">
 
-  <title> Alamnew  </title>
+  <title>Ali Fennix </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
@@ -46,9 +46,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{% url 'index' %}">
-            <span>
-              Alamnew desert Delivery
-            </span>
+            <span> Ali Fennix desert Delivery</span>
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,17 +55,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item ">
-                <a class="nav-link" href="{% url 'about' %}">Home </a>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'about' %}">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+                <a class="nav-link" href="{% url 'menu' %}">menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'book' %}">Order</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{% url 'index' %}">About <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'index' %}">About </a>
               </li>
             </ul>
             <div class="user_option">
@@ -95,36 +93,6 @@
                       <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
                    c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
                     </g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
                   </g>
                 </svg>
               </a>
@@ -162,18 +130,6 @@
                     </form>
                     <button onclick="closeModal()">Close</button>
                   </div>
-                
-                  <!-- Login Modal -->
-                  <div class="modal" id="user_login_modal">
-                    <form action="/login/" method="POST">
-                      {% csrf_token %}
-                      <input type="text" name="username" placeholder="Username" required><br>
-                      <input type="password" name="password" placeholder="Password" required><br>
-                      <button type="submit">Login</button>
-                    </form>
-                    <button onclick="closeModal()">Close</button>
-                  </div>
-                
                   <!-- JavaScript for Modal -->
                   <script>
                     function openModal(type) {
@@ -201,21 +157,21 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
   <!-- about section -->
 
   <section class="about_section layout_padding">
     <div class="container  ">
-      <div>
-             {% if messages %}
-                <ul>
-                  {% for message in messages %}
-                    <li style="color: red;">{{ message }}</li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
+        <div>
+          {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-warning">
+            {{ message }}
+        </div>
+      {% endfor %}
+      {% endif %}
+
         </div>
       <div class="row">
         <div class="col-md-6 ">
@@ -226,9 +182,7 @@
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                We Are Alamnwian
-              </h2>
+              <h2>We Are Fennixian</h2>
             </div>
             <p>
               There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
@@ -236,9 +190,7 @@
               are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
               the middle of text. All
             </p>
-            <a href="{% url 'menu'%}">
-              Read More
-            </a>
+            <a href="{% url 'menu'%}"> Read More</a>
           </div>
         </div>
       </div>
@@ -253,74 +205,46 @@
       <div class="row">
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
-            <h4>
-              Contact Us
-            </h4>
+            <h4>Contact Us</h4>
             <div class="contact_link_box">
-              <a href="">
+              <a href="https://maps.app.goo.gl/NnkTQVRZUYzoUfBS7" target="_blank">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
+                <span>Location</span>
+            </a>
+            <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +251.923456786
-                </span>
+                <span>Call +251.923456786</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  alamnew2025fooddelivery@gmail.com
-                </span>
+                <span>alamnew2025fooddelivery@gmail.com</span>
               </a>
             </div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Alamnew desert delivery
-            </a>
-            <p>
-              Necessary, making this the first true 
-            </p>
+            <a href="{% url 'book' %}" class="footer-logo">Alamnew desert delivery </a>
+            <p> Necessary, making this the first true </p>
             <div class="footer_social">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
-              </a>
+              <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
         <div class="col-md-4 footer-col">
-          <h4>
-            Opening Hours
-          </h4>
-          <p>
-            Everyday
-          </p>
-          <p>
-            10.00 Am -10.00 Pm
-          </p>
+          <h4 style="text-decoration-style: solid; color:blue">Opening Hours</h4>
+          <p>Everyday </p>
+          <p>7:30 AM to 8:30 PM</p>
         </div>
       </div>
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved. 
-          <a href="https://html.design/">Alamnew food delivery</a><br><br>
+          <a href="https://html.design/">Ali Fennix food delivery</a><br><br>
           &copy; <span id="displayYear"></span> Made By
           <a href="https://themewagon.com/" target="_blank">Anamoloous developer</a>
         </p>
@@ -329,27 +253,25 @@
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- isotope js -->
-  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-  <!-- nice select -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
-
-</html>
+   <!-- jQery -->
+   <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+   <!-- popper js -->
+   <script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' %}" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+   </script>
+   <!-- bootstrap js -->
+   <script src="{% static 'js/bootstrap.js' %}"></script>
+   <!-- owl slider -->
+   <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' %}">
+   </script>
+   <!-- isotope js -->
+   <script src="{% static 'https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js' %}"></script>
+   <!-- nice select -->
+   <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js' %}"></script>
+   <!-- custom js -->
+   <script src="{% static 'js/custom.js' %}"></script>
+   <!-- Google Map -->
+   <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap' %}">
+   </script>
+   <!-- End Google Map -->
+ </body>
+ </html>

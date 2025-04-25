@@ -1,3 +1,3 @@
-$(document).ready(function() {
-  $('form').ajaxForm();
+$(document).ready(function () {
+  $("form").ajaxForm();
 });

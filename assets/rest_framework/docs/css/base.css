@@ -1,21 +1,21 @@
 h1 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 .intro-code {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 pre.highlight code * {
-  white-space: nowrap;    /* this sets all children inside to nowrap */
+  white-space: nowrap; /* this sets all children inside to nowrap */
 }
 
 pre.highlight {
-  overflow-x: auto;       /* this sets the scrolling in x */
+  overflow-x: auto; /* this sets the scrolling in x */
 }
 
 pre.highlight code {
-  white-space: pre;       /* forces <code> to respect <pre> formatting */
+  white-space: pre; /* forces <code> to respect <pre> formatting */
 }
 
 .main-container {
@@ -38,20 +38,20 @@ pre.highlight code {
   top: 0px;
   width: 225px;
   height: 100%;
-  color: #FFF;
+  color: #fff;
 }
 
 .sidebar .brand {
-    background-color: #23282e;
-    display: block;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  background-color: #23282e;
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .sidebar .brand a {
-    color: #FFF;
+  color: #fff;
 }
 
 .sidebar .brand a:hover,
@@ -123,7 +123,6 @@ pre.highlight code {
   background-color: #020203;
 }
 
-
 .sidebar .menu-list ul .sub-menu li a,
 .sidebar .menu-list li .sub-menu li a {
   display: block;
@@ -179,9 +178,9 @@ body {
 }
 
 .coredocs-section-title {
-    margin-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid lightgrey;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .coredocs-link-title a,
@@ -201,20 +200,19 @@ body {
 }
 
 .coredocs-section-title:last-child {
-    margin-top: 0;
+  margin-top: 0;
 }
-
 
 /* @group Language Switcher */
 
 .sidebar .menu-list.menu-list-bottom {
-    margin-bottom: 0;
-    position: fixed;
-    width: inherit;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #23282e;
+  margin-bottom: 0;
+  position: fixed;
+  width: inherit;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #23282e;
 }
 
 .sidebar .menu-list-bottom li span {
@@ -225,19 +223,18 @@ body {
 
 /* @end Language Switcher */
 
-
 /* @group Docs Content */
 
 .docs-content .meta .label {
-    vertical-align: middle;
-    font-size: 14px;
-    font-weight: normal;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .docs-content .meta code {
-    vertical-align: middle;
-    padding: .2em .6em .3em;
-    font-size: 14px;
+  vertical-align: middle;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 14px;
 }
 
 .docs-content .btn {
@@ -249,7 +246,6 @@ body {
 }
 
 /* @end Docs Content */
-
 
 @media (max-width: 767px) {
   .main-container {
@@ -297,14 +293,14 @@ body {
     display: block;
   }
   #main {
-    width:calc(100% - 225px);
+    width: calc(100% - 225px);
     float: right;
   }
 }
 
 @media (min-width: 992px) {
   .modal-lg {
-      width: 980px;
+    width: 980px;
   }
 }
 
@@ -314,7 +310,7 @@ body {
 
 .api-modal .modal-body .request-awaiting {
   padding: 35px 10px;
-  color: #7F8177;
+  color: #7f8177;
   text-align: center;
 }
 
@@ -323,15 +319,15 @@ body {
 }
 
 .api-modal .modal-body .meta .label {
-    vertical-align: middle;
-    font-size: 14px;
-    font-weight: normal;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 .api-modal .modal-body .meta code {
-    vertical-align: middle;
-    padding: .2em .6em .3em;
-    font-size: 14px;
+  vertical-align: middle;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 14px;
 }
 
 .api-modal .modal-content .toggle-view {
@@ -345,15 +341,15 @@ body {
 }
 
 .highlight {
-    background-color: #f7f7f9
+  background-color: #f7f7f9;
 }
 
 .checkbox label.control-label {
-    font-weight: bold
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
-    .navbar-nav.navbar-right:last-child {
-        margin-right: 0 !important;
-    }
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0 !important;
+  }
 }

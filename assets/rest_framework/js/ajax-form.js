@@ -15,12 +15,13 @@ function doAjaxSubmit(e) {
   var form = $(this);
   var btn = $(this.clk);
   var method = (
-    btn.data('method') ||
-    form.data('method') ||
-    form.attr('method') || 'GET'
+    btn.data("method") ||
+    form.data("method") ||
+    form.attr("method") ||
+    "GET"
   ).toUpperCase();
 
-  if (method === 'GET') {
+  if (method === "GET") {
     // GET requests can always use standard form submits.
     return;
   }
@@ -29,7 +30,7 @@ function doAjaxSubmit(e) {
     form.find('input[data-override="content-type"]').val() ||
     form.find('select[data-override="content-type"] option:selected').text();
 
-  if (method === 'POST' && !contentType) {
+  if (method === "POST" && !contentType) {
     // POST requests can use standard form submits, unless we have
     // overridden the content type.
     return;
@@ -38,32 +39,39 @@ function doAjaxSubmit(e) {
   // At this point we need to make an AJAX form submission.
   e.preventDefault();
 
-  var url = form.attr('action');
+  var url = form.attr("action");
   var data;
 
   if (contentType) {
-    data = form.find('[data-override="content"]').val() || ''
+    data = form.find('[data-override="content"]').val() || "";
 
-    if (contentType === 'multipart/form-data') {
+    if (contentType === "multipart/form-data") {
       // We need to add a boundary parameter to the header
       // We assume the first valid-looking boundary line in the body is correct
       // regex is from RFC 2046 appendix A
       var boundaryCharNoSpace = "0-9A-Z'()+_,-./:=?";
-      var boundaryChar = boundaryCharNoSpace + ' ';
-      var re = new RegExp('^--([' + boundaryChar + ']{0,69}[' + boundaryCharNoSpace + '])[\\s]*?$', 'im');
+      var boundaryChar = boundaryCharNoSpace + " ";
+      var re = new RegExp(
+        "^--([" +
+          boundaryChar +
+          "]{0,69}[" +
+          boundaryCharNoSpace +
+          "])[\\s]*?$",
+        "im",
+      );
       var boundary = data.match(re);
       if (boundary !== null) {
         contentType += '; boundary="' + boundary[1] + '"';
       }
       // Fix textarea.value EOL normalisation (multipart/form-data should use CR+NL, not NL)
-      data = data.replace(/\n/g, '\r\n');
+      data = data.replace(/\n/g, "\r\n");
     }
   } else {
-    contentType = form.attr('enctype') || form.attr('encoding')
+    contentType = form.attr("enctype") || form.attr("encoding");
 
-    if (contentType === 'multipart/form-data') {
+    if (contentType === "multipart/form-data") {
       if (!window.FormData) {
-        alert('Your browser does not support AJAX multipart form submissions');
+        alert("Your browser does not support AJAX multipart form submissions");
         return;
       }
 
@@ -73,7 +81,7 @@ function doAjaxSubmit(e) {
       contentType = false;
       data = new FormData(form[0]);
     } else {
-      contentType = 'application/x-www-form-urlencoded; charset=UTF-8'
+      contentType = "application/x-www-form-urlencoded; charset=UTF-8";
       data = form.serialize();
     }
   }
@@ -85,23 +93,23 @@ function doAjaxSubmit(e) {
     contentType: contentType,
     processData: false,
     headers: {
-      'Accept': 'text/html; q=1.0, */*'
+      Accept: "text/html; q=1.0, */*",
     },
   });
 
-  ret.always(function(data, textStatus, jqXHR) {
-    if (textStatus != 'success') {
+  ret.always(function (data, textStatus, jqXHR) {
+    if (textStatus != "success") {
       jqXHR = data;
     }
 
     var responseContentType = jqXHR.getResponseHeader("content-type") || "";
 
-    if (responseContentType.toLowerCase().indexOf('text/html') === 0) {
+    if (responseContentType.toLowerCase().indexOf("text/html") === 0) {
       replaceDocument(jqXHR.responseText);
 
       try {
         // Modify the location and scroll to top, as if after page load.
-        history.replaceState({}, '', url);
+        history.replaceState({}, "", url);
         scroll(0, 0);
       } catch (err) {
         // History API not supported, so redirect.
@@ -123,11 +131,10 @@ function captureSubmittingElement(e) {
   form.clk = target;
 }
 
-$.fn.ajaxForm = function() {
-  var options = {}
+$.fn.ajaxForm = function () {
+  var options = {};
 
-  return this
-    .unbind('submit.form-plugin  click.form-plugin')
-    .bind('submit.form-plugin', options, doAjaxSubmit)
-    .bind('click.form-plugin', options, captureSubmittingElement);
+  return this.unbind("submit.form-plugin  click.form-plugin")
+    .bind("submit.form-plugin", options, doAjaxSubmit)
+    .bind("click.form-plugin", options, captureSubmittingElement);
 };

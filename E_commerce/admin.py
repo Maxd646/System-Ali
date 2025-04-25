@@ -1,15 +1,15 @@
 from django.contrib import admin
-from .models import Food
-from .models import Customer
-from .models import FoodOrdera
+from .models import *
 from asgiref.sync import async_to_sync
 from channels.layers import get_channel_layer
+
 
 admin.site.site_title = "Daniboy Admin Portal"
 admin.site.site_header = 'Alamnew Online Food Delivery'
 admin.site.index_title = "Welcome to the Alamnew Admin Panel"
 
 
+admin.site.register(ItemFeedback)
 def update_order_status(order_id, new_status):
     order = FoodOrdera.objects.get(id=order_id)
     order.status = new_status
@@ -38,6 +38,14 @@ class FoodOrderaAdmin(admin.ModelAdmin):
                        'fields':('status', 'photo', 'delivery_address') 
                        }), 
         )
+
+@admin.register(FoodItem)
+class FoodItemAdmin(admin.ModelAdmin):
+    list_display=('title', 'description', 'price', 'image')
+
+@admin.register(DeviceItem)
+class DeviceItemAdmin(admin.ModelAdmin):
+    list_display=('title', 'description', 'price', 'image')
 
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):

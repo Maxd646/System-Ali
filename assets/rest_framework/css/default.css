@@ -5,11 +5,13 @@ h1 {
   font-weight: 300;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 300;
 }
 
-.resource-description, .response-info {
+.resource-description,
+.response-info {
   margin-bottom: 2em;
 }
 
@@ -40,7 +42,9 @@ td.nested > table {
   margin: 0;
 }
 
-form select, form input:not([type=checkbox]), form textarea {
+form select,
+form input:not([type="checkbox"]),
+form textarea {
   width: 90%;
 }
 
@@ -73,10 +77,10 @@ pre {
   padding-bottom: 0px;
 }
 
-#filtersModal form input[type=submit] {
-    width: auto;
+#filtersModal form input[type="submit"] {
+  width: auto;
 }
 
 #filtersModal .modal-body h2 {
-    margin-top: 0
+  margin-top: 0;
 }

@@ -3,6 +3,15 @@ from django import forms
 from .models import FoodOrdera
 
 class FoodOrderaForm(forms.ModelForm):
+    phone_number = forms.CharField(
+        widget=forms.TextInput(attrs={'placeholder': 'Enter phone number', 'class': 'form-control'}),
+        label="Phone Number"
+    )
+    delivery_address = forms.CharField(
+        widget=forms.Textarea(attrs={'rows': 3, 'class': 'form-control', 'placeholder': 'Enter delivery address'}),
+        label="Delivery Address"
+    )
+
     def clean_phone_number(self):
         phone_number = self.cleaned_data.get("phone_number")
         try:
@@ -16,4 +25,12 @@ class FoodOrderaForm(forms.ModelForm):
 
     class Meta:
         model = FoodOrdera
-        fields = ['customer_name', 'phone_number', 'food_item', 'quantity', 'delivery_address', 'status','total_price', 'photo']
+        fields = ['customer_name', 'phone_number', 'food_item', 'quantity', 'delivery_address', 'status', 'transaction', 'your_photo']
+        widgets = {
+            'customer_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter full name'}),
+            'food_item': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Food item'}),
+            'quantity': forms.NumberInput(attrs={'class': 'form-control', 'min': 1}),
+            'status': forms.Select(attrs={'class': 'form-control'}),
+            'transaction': forms.ClearableFileInput(attrs={'class': 'form-control', 'placeholder': 'Enter screenshot of transaction'}),
+            'your_photo': forms.ClearableFileInput(attrs={'class': 'form-control', 'placeholder': 'Enter your photo'}),
+        }

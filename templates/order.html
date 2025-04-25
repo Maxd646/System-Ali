@@ -1,0 +1,57 @@
+{% extends 'book.html' %} {% block title %}Order Food{% endblock %} {% block
+content %}
+<h2>Multi-Step Form</h2>
+
+<!-- Step 1: Comment Section -->
+<div id="step1">
+  <h3>Step 1: Leave a Comment</h3>
+  <textarea placeholder="Write your comment..." required></textarea>
+  <br />
+  <button onclick="nextStep(2)">Next</button>
+</div>
+
+<!-- Step 2: Food Order Section (Initially Hidden) -->
+<div id="step2" style="display: none">
+  <h3>Step 2: Order Food</h3>
+  <label>Choose Food:</label>
+  <select>
+    <option>Pizza</option>
+    <option>Burger</option>
+    <option>Pasta</option>
+  </select>
+  <br />
+  <button onclick="prevStep(1)">Back</button>
+  <button onclick="nextStep(3)">Next</button>
+</div>
+
+<!-- Step 3: Payment Section (Initially Hidden) -->
+<div id="step3" style="display: none">
+  <h3>Step 3: Payment</h3>
+  <label>Enter Card Number:</label>
+  <input type="text" placeholder="**** **** **** ****" required />
+  <br />
+  <button onclick="prevStep(2)">Back</button>
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+  function nextStep(step) {
+    document.getElementById("step1").style.display = "none";
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("step3").style.display = "none";
+    document.getElementById("step" + step).style.display = "block";
+  }
+
+  function prevStep(step) {
+    document.getElementById("step1").style.display = "none";
+    document.getElementById("step2").style.display = "none";
+    document.getElementById("step3").style.display = "none";
+    document.getElementById("step" + step).style.display = "block";
+  }
+
+  function submitForm() {
+    alert("Form Submitted Successfully!");
+  }
+</script>
+
+{% endblock %}

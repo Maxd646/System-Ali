@@ -6,14 +6,14 @@ $textCol: #1f1f1f;
 
 // import fonts -  font-family: 'Open Sans', sans-serif and  font-family: 'Dancing Script', cursive;
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
 
 @mixin main-font {
   font-family: "Open Sans", sans-serif;
 }
 
 @mixin second-font {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -156,7 +156,6 @@ a:focus {
       }
     }
   }
-
 }
 
 .header_section {
@@ -228,10 +227,8 @@ a:focus {
   .user_link {
     color: $white;
 
-
     &:hover {
       color: $primary1;
-
     }
   }
 
@@ -248,7 +245,6 @@ a:focus {
     }
 
     &:hover {
-
       svg {
         fill: $primary1;
       }
@@ -311,7 +307,6 @@ a:focus {
         top: 0;
       }
     }
-
   }
 }
 
@@ -352,16 +347,13 @@ a:focus {
       @include hero_btn($primary1, $white, 10px, 45px, 45px);
       margin-top: 10px;
     }
-
   }
 
   .img-box {
     img {
       width: 100%;
     }
-
   }
-
 
   .carousel-indicators {
     position: unset;
@@ -408,19 +400,18 @@ a:focus {
       height: 175px;
       margin-right: 15px;
       position: relative;
-      transition: all .1.5s;
+      transition: all 0.1.5s;
       border-radius: 100%;
       border: 5px solid $primary1;
       overflow: hidden;
 
       img {
         width: 100%;
-        transition: all .2s;
+        transition: all 0.2s;
       }
     }
 
     .detail-box {
-
       h5 {
         @include second-font();
         font-size: 24px;
@@ -433,7 +424,7 @@ a:focus {
 
         span {
           font-size: 2.5rem;
-          font-weight: bold
+          font-weight: bold;
         }
       }
 
@@ -451,23 +442,19 @@ a:focus {
 
     &:hover {
       .img-box {
-
         img {
           transform: scale(1.1);
         }
       }
     }
   }
-
 }
 
 // end offer section
 
-
 // food section
 
 .food_section {
-
   .filters_menu {
     padding: 0;
     display: flex;
@@ -511,7 +498,7 @@ a:focus {
       img {
         max-width: 100%;
         max-height: 145px;
-        transition: all .2s;
+        transition: all 0.2s;
       }
     }
 
@@ -594,7 +581,6 @@ a:focus {
       position: relative;
       z-index: 2;
     }
-
   }
 
   .detail-box {
@@ -619,9 +605,7 @@ a:focus {
     margin-bottom: 25px;
   }
 
-
   .form_container {
-
     .form-control {
       width: 100%;
       border: none;
@@ -638,8 +622,6 @@ a:focus {
       &::placeholder {
         color: #222222;
       }
-
-
     }
 
     .nice-select .current {
@@ -666,11 +648,9 @@ a:focus {
       width: 100%;
     }
   }
-
 }
 
 // end book section
-
 
 /* client section start */
 
@@ -762,7 +742,6 @@ a:focus {
     margin-bottom: 45px;
   }
 
-
   .form_container {
     .form-group {
       margin-bottom: 25px;
@@ -801,8 +780,6 @@ a:focus {
       @include hero_btn($primary1, $white, 10px, 55px, 0px);
     }
   }
-
-
 }
 
 // end contact section
@@ -835,7 +812,6 @@ a:focus {
   }
 
   .footer_contact {
-
     .contact_link_box {
       display: flex;
       flex-direction: column;
@@ -887,8 +863,6 @@ a:focus {
       }
     }
   }
-
-
 
   .footer-info {
     text-align: center;

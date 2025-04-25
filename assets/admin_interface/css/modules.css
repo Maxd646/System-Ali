@@ -6,7 +6,7 @@
 .admin-interface .inline-group h2,
 .admin-interface #nav-sidebar .module caption,
 .admin-interface #nav-sidebar .module th {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* end fix */
