@@ -144,8 +144,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
-            'client_id': '841863365535-68kji834s9j4s6rv5lrq3rg0erg8tqcq.apps.googleusercontent.com',
-            'client_secret': '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',
+            'client_id': '845535-68kji834s93rg0erg8tqcq.apps.googleusercontent.com',
+            'client_secret': 'GOCSqZRgXTH_OgBqQTgYDRXS61g8',
             'key': ''
         },
         'SCOPE': ['profile', 'email'],
