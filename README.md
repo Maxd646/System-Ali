@@ -1,20 +1,21 @@
-🚀 Ali መ Fennix
+**🚀 Ali መ Fennix**
+
 Ali መ Fennix is a powerful and scalable full-stack e-commerce platform built to serve the African market. This project aims to become a leading tech company like Amazon, with a strong focus on empowering businesses and customers across Africa.
 
 The platform is developed using:
 
-🔙 Backend: Django (with REST API support and Django templates)
+🔙**Backend:** Django (with REST API support and Django templates)
 
-🌐 Frontend: React.js
+🌐 **Frontend**: React.js and Django template
 
-🌍 Mission: Empowering Africa through modern e-commerce and technology
+🌍 **Mission:** Empowering Africa through modern e-commerce and technology
 
 📦 Repositories
 Layer	Technology	Repository
 Backend	Django	System-Ali
 Frontend	React.js	React-Ali
 
-💡 Vision
+💡 **Vision**
 Ali መ Fennix is more than a platform — it is a movement to digitize commerce across Africa. We aim to:
 
 Create a seamless, secure, and scalable online shopping experience
@@ -25,26 +26,26 @@ Empower developers, sellers, and customers with technology
 
 Build logistics, fintech, and delivery solutions tailored for Africa
 
-🛠️ Tech Stack
-Backend (Django)
-Django REST Framework for APIs
+🛠️**Tech Stack**
++ Backend (Django)
++ Django REST Framework for APIs
 
-PostgreSQL for scalable data storage
++ PostgreSQL for scalable data storage
 
-Authentication system
++ Authentication system
 
-Order management
++ Order management
 
-Admin dashboard
++ Admin dashboard
 
-Django templates (for basic frontend rendering)
++ Django templates (for basic frontend rendering)
 
-Frontend (React)
-React.js for modern UI/UX
+**Frontend (React)**
++ React.js for modern UI/UX
 
-Redux Toolkit for state management
++ Redux Toolkit for state management
 
-Axios for API calls
++ Axios for API calls
 
 Responsive and mobile-friendly design
 
