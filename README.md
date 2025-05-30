@@ -85,8 +85,13 @@ Ali-Project/
 
 Daniel — Founder of Ali መ Fennix
 
-📧 Email: ethiomiracle2017@gmail.com
-🌐 GitHub: @Maxd646
+ 📧 **Email:**
++ ethiomiracle2017@gmail.com
++ alemayehubethelhem12@gmail.com
+
+  🌐**GitHub:**
+  + @Maxd646
+  + bethelhem-dev
 
 🌟 Vision for the Future
 
@@ -103,6 +108,7 @@ Ali መ Fennix will grow to include:
 + Vendor self-registration & management
 
 🤝 Contributing
+
 We are building a future-focused company. If you want to contribute to building Africa's next tech giant:
 
 Fork the repository
@@ -114,4 +120,5 @@ Commit your changes
 Push and create a pull request
 
 📝 License
+
 This project is open-source under the MIT License.
