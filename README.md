@@ -76,14 +76,22 @@ Responsive and mobile-friendly design
 📁 Project Structure
 
 bash
+
 Copy
+
 Edit
+
 Ali-Project/
+
 ├── System-Ali/       # Django backend with templates
+
 └── React-Ali/        # React frontend
+
 👨‍💼 Author
 
-Daniel — Founder of Ali መ Fennix
++ **Daniel G. Kebede and Bethelhem Alemayehu** — Founder of Ali መ Fennix
+   
+
 
  📧 **Email:**
 + ethiomiracle2017@gmail.com
