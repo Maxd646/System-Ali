@@ -1,6 +1,6 @@
 **🚀 Ali መ Fennix**
 
-Ali መ Fennix is a powerful and scalable full-stack e-commerce platform built to serve the African market. This project aims to become a leading tech company like Amazon, with a strong focus on empowering businesses and customers across Africa.
+**Ali መ Fennix** is a powerful and scalable full-stack e-commerce platform built to serve the African market. This project aims to become a leading tech company like Amazon, with a strong focus on empowering businesses and customers across Africa.
 
 The platform is developed using:
 
