@@ -1,6 +1,6 @@
 import phonenumbers
 from django import forms
-from .models import FoodOrdera
+from .models import *
 
 class FoodOrderaForm(forms.ModelForm):
     phone_number = forms.CharField(

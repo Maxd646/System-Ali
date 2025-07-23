@@ -55,6 +55,7 @@ SITE_ID = 1
 
 # MIDDLEWARE
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -92,22 +93,19 @@ TEMPLATES = [
     },
 ]
 
-# DATABASE
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Back',
-        'USER': 'postgres',
-        'PASSWORD': '2323',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'my_db',
+        'USER': 'newuser',
+        'PASSWORD': 'QAZwsx123#',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
-
 # AUTHENTICATION
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'E_commerce.backends.AuthenticationBackend',
 ]
 
 REST_FRAMEWORK = {
@@ -144,8 +142,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'APP': {
-            'client_id': '8455.....35-68kji834s9...3rg0er...g8tqcq....apps.googleuse...rcontent.com',
-            'client_secret': 'GOC...SqZRgXT...H_OgBqQTgYDRXS61g8',
+            'client_id': '841863....365535-68kji834...rg8tqcq.apps.geuser....content.com',
+            'client_secret': 'OCSPX-W7....QfqZRgX..........gYDRXS61g8',
             'key': ''
         },
         'SCOPE': ['profile', 'email'],

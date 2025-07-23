@@ -1,0 +1,336 @@
+# This file is distributed under the same license as the
+# django-admin-interface package.
+#
+# Translators:
+# Ishak Okutan <ishak.oktn@gmail.com>, 2020
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: django-admin-interface\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-17 07:09-0500\n"
+"PO-Revision-Date: 2020-01-29 04:53+0300\n"
+"Last-Translator: Ishak Okutan <ishak.oktn@gmail.com>\n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.2.4\n"
+
+#: admin_interface/admin.py
+msgid "Environment"
+msgstr "Ortam"
+
+#: admin_interface/admin.py
+msgid "Language chooser"
+msgstr "Dil seçimi"
+
+#: admin_interface/admin.py
+msgid "Logo"
+msgstr "Logo"
+
+#: admin_interface/admin.py
+msgid "Favicon"
+msgstr "Favicon"
+
+#: admin_interface/admin.py
+msgid "Title"
+msgstr "Başlık"
+
+#: admin_interface/admin.py
+msgid "Header"
+msgstr "Üst Kısım"
+
+#: admin_interface/admin.py
+msgid "Breadcrumbs / Module headers"
+msgstr "Link alanı / Modül başlıkları"
+
+#: admin_interface/admin.py
+msgid "Generic Links"
+msgstr "Genel Bağlantılar"
+
+#: admin_interface/admin.py
+msgid "Save Buttons"
+msgstr "Kaydet Butonları"
+
+#: admin_interface/admin.py
+msgid "Delete Buttons"
+msgstr "Kaldır Butonları"
+
+#: admin_interface/admin.py
+msgid "Navigation Bar"
+msgstr "Navigasyon"
+
+#: admin_interface/admin.py
+msgid "Related Modal"
+msgstr "İlgili Modal"
+
+#: admin_interface/admin.py
+msgid "Form Controls"
+msgstr "Form Kontrolleri"
+
+#: admin_interface/admin.py
+msgid "List Filter"
+msgstr "Liste Filtresi"
+
+#: admin_interface/admin.py
+msgid "Change Form"
+msgstr "Değiştir Formu"
+
+#: admin_interface/admin.py
+msgid "Inlines"
+msgstr "İç/Alt  Formlar"
+
+#: admin_interface/admin.py
+msgid "Recent Actions"
+msgstr "Son İşlemler"
+
+#: admin_interface/apps.py
+msgid "Admin Interface"
+msgstr "Yönetici Arayüzü"
+
+#: admin_interface/models.py
+msgid "name"
+msgstr "adı"
+
+#: admin_interface/models.py
+msgid "active"
+msgstr "aktif"
+
+#: admin_interface/models.py admin_interface/templates/admin/base_site.html
+msgid "Django administration"
+msgstr "Django yönetimi"
+
+#: admin_interface/models.py
+msgid "title"
+msgstr "başlık"
+
+#: admin_interface/models.py
+msgid "color"
+msgstr "renk"
+
+#: admin_interface/models.py
+msgid "visible"
+msgstr "göster"
+
+#: admin_interface/models.py
+msgid "Leave blank to use the default Django logo"
+msgstr "Varsayılan Django logosunu kullanmak için boş bırakın"
+
+#: admin_interface/models.py
+msgid "logo"
+msgstr "logo"
+
+#: admin_interface/models.py
+msgid "max width"
+msgstr "maks genişlik"
+
+#: admin_interface/models.py
+msgid "max height"
+msgstr "maks yükseklik"
+
+#: admin_interface/models.py
+msgid "(.ico|.png|.gif - 16x16|32x32 px)"
+msgstr ""
+"(favicon simgesi, png veya (GIF 16x16) veya (32x32) piksel boyutlarında "
+"olmalıdır)"
+
+#: admin_interface/models.py
+msgid "favicon"
+msgstr "favicon"
+
+#: admin_interface/models.py
+msgid ""
+"(red: #E74C3C, orange: #E67E22, yellow: #F1C40F, green: #2ECC71, blue: "
+"#3498DB)"
+msgstr ""
+"(kırmızı: # E74C3C, turuncu: # E67E22, sarı: # F1C40F, yeşil: # 2ECC71, "
+"mavi: # 3498DB)"
+
+#: admin_interface/models.py
+msgid "visible in header (marker and name)"
+msgstr "üst kısım da görünsün (yuvarlak işaret ve ad)"
+
+#: admin_interface/models.py
+msgid "visible in favicon (marker)"
+msgstr "favicon’da görünsün (yuvarlak işaret)"
+
+#: admin_interface/models.py
+msgid "Default Select"
+msgstr "Varsayılan Seçim"
+
+#: admin_interface/models.py
+msgid "Minimal Select"
+msgstr "Minimal Seçim"
+
+#: admin_interface/models.py
+msgid "control"
+msgstr "kontrol"
+
+#: admin_interface/models.py
+msgid "code"
+msgstr "kod"
+
+#: admin_interface/models.py
+msgid "display"
+msgstr "görüntüle"
+
+#: admin_interface/models.py
+msgid "background color"
+msgstr "arka plan rengi"
+
+#: admin_interface/models.py
+msgid "text color"
+msgstr "metin rengi"
+
+#: admin_interface/models.py
+msgid "link color"
+msgstr "bağlantı rengi"
+
+#: admin_interface/models.py
+msgid "link hover color"
+msgstr "bağlantı üzerine gelindiğindeki rengi"
+
+#: admin_interface/models.py
+#, fuzzy
+#| msgid "background color"
+msgid "background selected color"
+msgstr "arka plan rengi"
+
+#: admin_interface/models.py
+#, fuzzy
+#| msgid "link color"
+msgid "link selected color"
+msgstr "bağlantı rengi"
+
+#: admin_interface/models.py
+msgid "rounded corners"
+msgstr "köşeleri ovalleştir"
+
+#: admin_interface/models.py
+msgid "link active color"
+msgstr "bağlantı aktif gelindiğindeki rengi"
+
+#: admin_interface/models.py
+msgid "background hover color"
+msgstr "arka planın üzerine gelindiğindeki renk"
+
+#: admin_interface/models.py
+msgid "background opacity"
+msgstr "arka plan şeffaflığı"
+
+#: admin_interface/models.py
+msgid "close button visible"
+msgstr "kapat düğmesi görünsün"
+
+#: admin_interface/models.py
+msgid "highlight active"
+msgstr "aktif vurgula"
+
+#: admin_interface/models.py
+msgid "use dropdown"
+msgstr "açılır listeyi kullan"
+
+#: admin_interface/models.py
+msgid "sticky position"
+msgstr "sabit konum"
+
+#: admin_interface/models.py
+msgid "quick remove links for active filters at top of sidebar"
+msgstr "yan menüdeki aktif filtrelerin üst kısmında hızlı kaldırma bağlantıları"
+
+#: admin_interface/models.py
+msgid "foldable apps"
+msgstr "katlanabilir uygulamalar"
+
+#: admin_interface/models.py
+msgid "fieldsets as tabs"
+msgstr "fieldsetleri sekmeler olarak"
+
+#: admin_interface/models.py
+msgid "inlines as tabs"
+msgstr "iç/alt formları sekmeler olarak"
+
+#: admin_interface/models.py
+msgid "collapsible stacked inlines"
+msgstr "kapatılabilir iç/alt formlar"
+
+#: admin_interface/models.py
+msgid "collapsible stacked inlines collapsed"
+msgstr "kapatılabilir iç/alt formlar kapalı"
+
+#: admin_interface/models.py
+msgid "collapsible tabular inlines"
+msgstr "kapatılabilir tabular iç/alt formlar"
+
+#: admin_interface/models.py
+msgid "collapsible tabular inlines collapsed"
+msgstr "kapatılabilir tabular iç/alt formlar kapalı"
+
+#: admin_interface/models.py
+msgid "sticky submit"
+msgstr "gönderme sabit"
+
+#: admin_interface/models.py
+msgid "sticky pagination"
+msgstr "sayfalama sabit"
+
+#: admin_interface/models.py
+msgid "Theme"
+msgstr "Tema"
+
+#: admin_interface/models.py
+msgid "Themes"
+msgstr "Temalar"
+
+#: admin_interface/templates/admin/change_list.html
+#, fuzzy
+#| msgid "List Filter"
+msgid "Filter"
+msgstr "Filitre"
+
+#. Translators: don't translate this, the django catalog already contains it
+#: admin_interface/templates/admin/change_list.html
+msgid "Hide counts"
+msgstr "Sayım gizle"
+
+#. Translators: don't translate this, the django catalog already contains it
+#: admin_interface/templates/admin/change_list.html
+msgid "Show counts"
+msgstr "Sayım göster"
+
+#. Translators: don't translate this, the django catalog already contains it
+#: admin_interface/templates/admin/change_list.html
+msgid "Clear all filters"
+msgstr "Tüm filtreleri temizle"
+
+#: admin_interface/templates/admin/edit_inline/headerless_stacked.html
+#: admin_interface/templates/admin/edit_inline/headerless_tabular.html
+msgid "Change"
+msgstr "Değiştir"
+
+#: admin_interface/templates/admin/edit_inline/headerless_stacked.html
+#: admin_interface/templates/admin/edit_inline/headerless_tabular.html
+msgid "View"
+msgstr "Görüntüle"
+
+#: admin_interface/templates/admin/edit_inline/headerless_stacked.html
+#: admin_interface/templates/admin/edit_inline/headerless_tabular.html
+msgid "View on site"
+msgstr "Siteyi görüntüle"
+
+#: admin_interface/templates/admin/edit_inline/headerless_tabular.html
+msgid "Delete?"
+msgstr "Sil?"
+
+#: admin_interface/templates/admin/filter.html
+#: admin_interface/templates/admin_interface/dropdown_filter.html
+#, python-format
+msgid " By %(filter_title)s "
+msgstr " %(filter_title)s "
+
+#: admin_interface/templates/admin/popup_response.html
+msgid "Popup closing..."
+msgstr "Popup kapanıyor..."

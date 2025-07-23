@@ -1,0 +1,6 @@
+{% load admin_interface_tags static %}
+
+{% if theme.foldable_apps %}
+<link rel="stylesheet" href="{% get_admin_interface_static 'admin_interface/foldable-apps/foldable-apps.css' %}">
+<script src="{% get_admin_interface_static 'admin_interface/foldable-apps/foldable-apps.js' %}"></script>
+{% endif %}

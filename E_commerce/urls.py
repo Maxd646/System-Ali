@@ -1,10 +1,7 @@
-from django.urls import path
 from .import views 
 from django.urls import path, include
-from .views import *
-from .admin import *
+from .views import FoodItemList, DeviceItemList
 from . import consumers
-from django.urls import path
 from dj_rest_auth.registration.views import SocialLoginView
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 

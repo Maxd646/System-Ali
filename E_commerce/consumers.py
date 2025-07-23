@@ -1,6 +1,6 @@
 import json
 from channels.generic.websocket import AsyncWebsocketConsumer
-from .models import FoodOrdera
+from .models import *
 
 class OrderConsumer(AsyncWebsocketConsumer):
     async def connect(self):

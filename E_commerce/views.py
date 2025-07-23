@@ -1,29 +1,25 @@
 from django.shortcuts import render, redirect
-from .models import *
+from .models import Food, FoodItem, DeviceItem, FoodOrdera, Customer, ItemFeedback
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from allauth.socialaccount.models import SocialLogin
+from allauth.socialaccount.models import SocialLogin, SocialAccount
 from allauth.socialaccount.providers.google.views import GoogleOAuth2Adapter
 from allauth.socialaccount.helpers import complete_social_login
-from allauth.socialaccount.models import SocialAccount
-from django.http import HttpResponse
 from .services import send_sms
 from .forms import FoodOrderaForm
 from django.conf import settings
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
-from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .serializers import *
+from .serializers import FoodItemSerializer, DeviceItemSerializer, FoodOrderaSerializer, CustomerSerializer, FoodSerializer, ItemFeedbackSerializer
 from rest_framework import generics
 from rest_framework.views import APIView
-from django.http import JsonResponse
 
 
 def search_items(request):
