@@ -89,17 +89,15 @@ Ali-Project/
 
 👨‍💼 Author
 
-+ **Daniel G. Kebede and Bethelhem Alemayehu** — Founder of Ali መ Fennix
++ **Daniel G. Kebede**
    
 
 
  📧 **Email:**
 + ethiomiracle2017@gmail.com
-+ alemayehubethelhem12@gmail.com
 
   🌐**GitHub:**
   + @Maxd646
-  + bethelhem-dev
 
 🌟 Vision for the Future
 
