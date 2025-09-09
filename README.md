@@ -43,7 +43,7 @@ Build logistics, fintech, and delivery solutions tailored for Africa
 
 + Django templates (for basic frontend rendering)
 
-**Frontend (React)**
+**Frontend (React) at https://github.com/Maxd646/React-Ali-**
 
 + React.js for modern UI/UX
 
