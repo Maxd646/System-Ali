@@ -90,14 +90,6 @@ Ali-Project/
 👨‍💼 Author
 
 + **Daniel G. Kebede**
-   
-
-
- 📧 **Email:**
-+ ethiomiracle2017@gmail.com
-
-  🌐**GitHub:**
-  + @Maxd646
 
 🌟 Vision for the Future
 
